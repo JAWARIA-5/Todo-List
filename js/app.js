@@ -67,7 +67,7 @@ app.service("todoService", function ($http) {
 
       //entry.id = todoservice.getNewId();
       todoservice.todoItems.push(entry);
-      console.log(todoservice.todoItems);
+      
     }
   };
 
@@ -79,6 +79,7 @@ app.service("todoService", function ($http) {
   todoservice.completeItem = function (entry) {
     entry.completed = !entry.completed;
   };
+
   return todoservice;
 });
 
