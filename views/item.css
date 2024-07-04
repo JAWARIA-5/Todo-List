@@ -10,3 +10,24 @@
     right: 0;
     top: 40%;
 }
+
+.custom-button {
+    background-color: rgb(126, 176, 142); 
+    color: white; 
+}
+.custom-button.cancel {
+    background-color: #b37d7d;
+}
+.containerTodo{
+    padding: 3rem;
+    text-align: center;
+    background-color: silver;
+    font-size: x-large;
+    font-weight: bold;
+    width:100%;
+    padding-bottom: 3rem;
+}
+.addtodobtn{
+    padding-bottom: 3rem;
+    text-align: center;
+}

@@ -2,10 +2,14 @@
 <!--todoList.html-->
 
 <div class="container">
-    <a href="/additem" class="btn btn-outline-secondary">Add Todo</a>
+    <h4>The Current Todos~</h4>
+    <br/>
     <ul class="list-group">
         <li ng-repeat = "item in todoItems | orderBy: '-date'"class="list-group-item">
             <ja-todo-item></ja-todo-item>
            </li>
       </ul>
+      <br/>
+      <a href="/additem" class="btn btn-outline-secondary" >Add a Todo</a>
+   
 </div>
