@@ -1,0 +1,11 @@
+<!--The part of html that changes is pulled into a new view file-->
+<!--todoList.html-->
+
+<div class="container">
+    <a href="/additem" class="btn btn-outline-secondary">Add Todo</a>
+    <ul class="list-group">
+        <li ng-repeat = "item in todoItems | orderBy: '-date'"class="list-group-item">
+            <ja-todo-item></ja-todo-item>
+           </li>
+      </ul>
+</div>

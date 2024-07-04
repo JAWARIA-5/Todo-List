@@ -1,0 +1,14 @@
+.custom-button {
+    background-color: rgb(126, 176, 142); 
+    color: white; 
+}
+.custom-button.cancel {
+    background-color: #b37d7d;
+}
+.containerTodo{
+    padding: 3rem;
+    text-align: center;
+    background-color: silver;
+    font-size: x-large;
+    font-weight: bold;
+}

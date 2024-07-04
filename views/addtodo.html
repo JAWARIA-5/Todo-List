@@ -1,0 +1,18 @@
+<!--addTodo.html-->
+    
+<div class="container mt-5">
+    <form name="TodoForm">
+        <div class="alert alert-danger" role="alert" ng-show="TodoForm.$dirty && !TodoForm.$valid">
+            <span class="sr-only">Error:</span>
+            Enter Valid Grocery Item
+        </div>
+        <div class="mb-3">
+            <label for="exampleInput" class="form-label">Enter Your Todo</label>
+            <input type="text" ng-pattern="/^[a-zA-Z\s]*$/" class="form-control" id="exampleInput" placeholder="Type something here" ng-model="todoItem.todo" required>
+        </div>
+        <div class="d-grid gap-2">
+            <button type="button" class="btn custom-button" ng-click="TodoForm.$valid && save()"><i class="fa-solid fa-thumbtack"></i> Save</button>
+            <a href="/" class="btn custom-button cancel"><i class="fa-solid fa-x"></i> Cancel</a>
+        </div>
+    </form>
+</div>
